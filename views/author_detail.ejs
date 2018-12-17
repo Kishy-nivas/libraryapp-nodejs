@@ -1,0 +1,27 @@
+<html
+	<head>
+		<title> <%= title %> </title> 
+	</head> 
+	 <%- include('./partials/script'); -%> 
+	 <%- include('./partials/navbar'); -%> 
+	 <%- include('./partials/side_navbar'); -%>
+	 <hr> 
+	 <body class ="bg-white"> 
+	 <div class = "container">
+	 	  <div class = "row">
+	 	    <div class  "col-md-9 offset-md-2">
+	 	      <div class="card">
+            <div class="card-body">
+              <h4 class="card-title text-primary"><%= author_detail.name %> <h4> 
+              <p class="card-text"><%= author_detail.date_of_birth %> </p>
+              <a href="#" class="btn btn-primary">Button</a>
+           </div>
+        </div>
+	 		    
+	 		</div>
+	 	 </div>
+	 </div> 
+	 
+	 
+	 </body> 
+</html> 

@@ -1,0 +1,24 @@
+<html
+	<head>
+		<title> Library App <%= title %> </title> 
+	</head> 
+	 <%- include('./partials/script'); -%> 
+	 <%- include('./partials/navbar'); -%> 
+	 <%- include('./partials/side_navbar'); -%>
+	 <hr> 
+	 <body class ="bg-white"> 
+	 <div class = "container">
+	 	  <div class = "row">
+	 	    <div class = "col-md-9 offset-md-2">
+	 	        <h3 class = "text-primary"> <%= title %> </h3>
+	 	        <ul class = "list-group">
+	 	        <% genre_list.forEach(function(genre){ %> 
+	 	            <li class = "list-group-item"> <a href = "<%= genre.url %>"> <%= genre.name %> </li>
+	 	       <% }); %> 
+	 		</div>
+	 	 </div>
+	 </div> 
+	 
+	 
+	 </body> 
+</html> 

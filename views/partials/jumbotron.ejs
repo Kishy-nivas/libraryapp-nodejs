@@ -1,0 +1,29 @@
+
+
+  <div class="jumbotron bg-transparent" >
+      <h1 class="display-5 text-primary">Welcome to our State Library !</h1>
+      <p class="lead">A nodejs project solution to scale 10,000's of requests with just a single server, take a peak at the stats</p>
+       <% if(error ){ %>
+            		<h4 class = "text-danger" >An error encountered please try again ! </h1>
+          		<% } else{ %>  
+   					<ul class="list-group ">
+						<li class="list-group-item">Books :<%= data.book_count %> </li>
+						<li class="list-group-item">Authors : <%= data.author_count %> </li>
+						<li class="list-group-item">Genres : <%= data.genre_count %></li>
+						<li class="list-group-item">Book Instances: <%= data.book_instance_count %> %></li>
+						<li class="list-group-item">Available Book Instances: <%= data.book_instance_available_count %> %></li>
+					</ul>
+					
+					<% } %>
+					
+      <p class="lead">
+      <br> 
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </p>
+  </div>
+  
+
+
+
+
+

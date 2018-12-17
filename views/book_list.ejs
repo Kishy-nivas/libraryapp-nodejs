@@ -1,0 +1,24 @@
+<html
+	<head>
+		<title> Library App <%= title %> </title> 
+	</head> 
+	 <%- include('./partials/script'); -%> 
+	 <%- include('./partials/navbar'); -%> 
+	 <%- include('./partials/side_navbar'); -%>
+	 <hr> 
+	 <body class ="bg-white"> 
+	 <div class = "container">
+	 	  <div class = "row">
+	 	    <div class = "col-md-9 offset-md-2">
+	 	        <h3 class = "text-primary"> <%= title %> </h3>
+	 	        <ul class = "list-group">
+	 	        <% book_list.forEach(function(book){ %> 
+	 	            <li class = "list-group-item"> <a href = "<%= book.url %>"> <%= book.title %></a> by <a href ="<%= book.author.url %>"> <%= book.author.name %> </a></li>
+	 	       <% }); %> 
+	 		</div>
+	 	 </div>
+	 </div> 
+	 
+	 
+	 </body> 
+</html> 
